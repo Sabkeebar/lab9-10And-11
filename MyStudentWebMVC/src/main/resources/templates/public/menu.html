@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management:: Menu</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header th:replace="fragments/header ::header"></header>
+<main>
+    <h2>list of menu</h2>
+    <ul class="list-group">
+
+        <li class="list-group-item"><a href="/secured/student/list">student list</a></li>
+
+        <li class="list-group-item"><a href="/new">Add form</a></li>
+
+<!--        <li class="list-group-item"><a href="/edit/{studentId}">edit</a></li>-->
+        <li class="list-group-item"><a href="/search">Search</a></li>
+
+    </ul>
+
+
+</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+main {
+    margin: 40px;
+}
+#home {
+   background-color: antiquewhite;
+    margin: 40px;
+}
+#menu{
+    background-color: antiquewhite;
+    margin: 40px;
+
+}
+body{
+    margin: 40px;
+}
+.section1{
+    margin: 40px;
+}
+h2{
+   text-align: justify;
+
+}
+#denroll{
+
+    width: 200px;
+  }

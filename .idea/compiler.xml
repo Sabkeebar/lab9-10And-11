@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MyStudentMgmtApp" />
+        <module name="MyStudentRESTApp" />
+        <module name="studentmngmnt" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="studentMngmt-WebMVC" target="19" />
+      <module name="studentmngmtweb-mvc" target="19" />
+      <module name="studenWebMVCapp" target="19" />
+      <module name="webmvc-studentmgmnt" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MyStudentMgmtApp" options="-parameters" />
+      <module name="MyStudentRESTApp" options="-parameters" />
+      <module name="studenWebMVCapp" options="-parameters" />
+      <module name="studentMngmt-WebMVC" options="-parameters" />
+      <module name="studentmngmnt" options="-parameters" />
+      <module name="studentmngmtweb-mvc" options="-parameters" />
+    </option>
+  </component>
+</project>

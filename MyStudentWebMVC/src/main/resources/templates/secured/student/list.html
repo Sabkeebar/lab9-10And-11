@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Fairfield Library :: System Public list </title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header th:replace="fragments/header ::header"></header>
+
+<section class="section1">
+  <h2  > System Administration</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Student number</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Middle Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">CGP</th>
+      <th scope="col">Date of Enrolment</th>
+      <th scope="col">Internation Student</th>
+      <th scope="col">Class building name</th>
+      <th scope="col">Class room number</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+<tr  th:each="stud, counter: ${students}">
+  <th th:text="${counter.count}"></th>
+  <td th:text="${stud.studentNumber}"></td>
+  <td th:text="${stud.firstName}"></td>
+  <td th:text="${stud.middleName}"></td>
+  <td th:text="${stud.lastName}"></td>
+  <td th:text="${stud.cgp}"></td>
+  <td th:text="${stud.dateOfEnrollment}"></td>
+  <td th:text="${stud.isInternation}"></td>
+  <td th:text="${stud.primaryClassroom.buildingName}"></td>
+  <td th:text="${stud.primaryClassroom.roomNumber}"></td>
+  <td>
+    <a th:href="@{'/edit/{studentId}'(studentId=${stud.studentId})}">
+      <i class="fa-regular fa-pen-to-square"></i> Edit student
+
+    </a>
+  </td>
+
+    </tbody>
+  </table>
+
+</section>
+</body>
+</html>
+</html>
